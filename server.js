@@ -11,6 +11,7 @@ const port = process.env.PORT || 1997
 const app = express()
 
 app.use(bodyParser.json())
+
 app.use('/users',userRoutes)
 
 app.get('/',(req,res) => {
